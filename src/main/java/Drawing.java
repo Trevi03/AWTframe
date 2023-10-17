@@ -1,12 +1,11 @@
 import java.awt.*;
 
 public class Drawing extends Canvas {
-    private Circle circle;
-    Drawing(){
-
+    private Circle c;
+    Drawing(int rad,Point pnt,Color col){
+        this.c = new Circle(rad,pnt,col);
     }
     public void paint(Graphics g){
-        g. setColor(Color.black);
-        g.drawLine(0,0,100,100);
+        c.circDraw(g);
     }
 }
