@@ -4,8 +4,7 @@ import java.awt.event.WindowEvent;
 
 public class Main {
     static Frame frame = new Frame();
-    static Drawing drawing = new Drawing(40,new Point(100,150),Color.red);
-    //frame.add(drawing);
+    static Drawing drawing = new Drawing(60,new Point(100,150),Color.red);
     public static void main(String[] args) {
         frame.add(drawing);
         drawing.setSize(300, 200);
