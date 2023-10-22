@@ -3,12 +3,24 @@ import java.awt.*;
 public class Drawing extends Canvas {
     private Circle c;
     private Rect r;
-    Drawing(int radc,Point pntc,Color colc,int wr,int hr, Point pntr, Color colr){
-        this.c = new Circle(radc,pntc,colc);
-        this.r = new Rect(wr,hr,pntr,colr);
+    private Square sq;
+// UseBuilder design pattern
+    public Drawing(){}
+    public Drawing circ(int rad,Point pnt,Color col){
+        this.c = new Circle(rad,pnt,col);
+        return this;
+    }
+    public Drawing rect(int width,int height,Point pnt,Color col){
+        this.r = new Rect(width,height,pnt,col);
+        return this;
+    }
+    public Drawing sqre(int side,Point pnt,Color col){
+        this.sq = new Square(side,pnt,col);
+        return this;
     }
     public void paint(Graphics g){
-        c.circDraw(g);
-        r.rectDraw(g);
+        c.draw(g);
+        r.draw(g);
+        sq.draw(g);
     }
 }

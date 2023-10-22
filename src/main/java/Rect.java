@@ -1,19 +1,18 @@
 import java.awt.*;
 
-public class Rect {
-    private Color c;
+
+public class Rect extends Shape {
     private Integer width;
     private Integer height;
-    private Point point;
-
+    //Rect(){}
     Rect(int w,int h, Point pnt, Color col){
+        super(pnt, col);
         this.width= w;
         this.height = h;
-        this.point = pnt;
-        this.c = col;
     }
-    public void rectDraw(Graphics g){
-        g.setColor(c);
+    @Override
+    public void draw(Graphics g){
+        g.setColor(color);
         g.fillRect(point.x, point.y, width,height);
     }
 }
