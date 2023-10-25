@@ -5,7 +5,7 @@ import java.awt.event.WindowEvent;
 public class Main {
     static Frame frame = new Frame();
     static Drawing drawing = new Drawing().circ(50,new Point(50,50),Color.red).
-            rect(100,60,new Point(150,100),Color.blue).sqre(10,new Point(150,40),Color.green);
+            rect(100,60,new Point(150,100),Color.blue).square(10,new Point(150,40),Color.green);
     public static void main(String[] args) {
         frame.add(drawing);
         drawing.setSize(300, 200);
