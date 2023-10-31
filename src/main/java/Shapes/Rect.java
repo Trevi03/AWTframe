@@ -1,11 +1,13 @@
+package Shapes;
+
 import java.awt.*;
 
 
 public class Rect extends Shape {
     private Integer width;
     private Integer height;
-    //Rect(){}
-    Rect(int w,int h, Point pnt, Color col){
+    //Shapes.Rect(){}
+    public Rect(int w, int h, Point pnt, Color col){
         super(pnt, col);
         this.width= w;
         this.height = h;

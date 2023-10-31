@@ -1,9 +1,11 @@
+package Shapes;
+
 import java.awt.*;
 
 public class Circle extends Shape {
     private int radius;
 
-    Circle(int rad,Point pnt,Color col){
+    public Circle(int rad, Point pnt, Color col){
         super(pnt, col);
         this.radius = rad;
     }

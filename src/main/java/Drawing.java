@@ -1,3 +1,8 @@
+import Shapes.Circle;
+import Shapes.Rect;
+import Shapes.Shape;
+import Shapes.Square;
+
 import java.awt.*;
 import java.util.ArrayList;
 
